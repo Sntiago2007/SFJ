@@ -1,0 +1,29 @@
+# Ejemplo de como poner negrita
+
+para colocar negrita se deben poner dos asteriscos tanto al incio como al final de las palabras o frases (**)
+
+# Ejemplos de imagenes en markdown
+
+se debe colocar el sigiente comando ![]() 
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl0L-v_VIcds4zFydeNgfazaR9-dRsqkke_g&s)
+
+# Ejemplo de tabla 
+
+| Titulo | descripción |
+| --- | --- |
+| Nombre | Santiago |
+| apellidos | Fiigrama Jimenez |
+| tipo de documento de identidad | TI |
+| numero de documento | 1043672919 |
+| Edad | 16 |
+| Dirección | car17A#26A-99 LAS NIEVES | 
+| celular | 3204402659 |
+| correo electronico | filigramasantiago@gmail.com |
+| usuario de Github | Sntiago2007 |
+| Fecha de nacimiento | 25/07/2007 |
+| nivel academico | bachiller | 
+
+# ejemplos de links 
+
+para colocar links se debe utilizar el siguiente codigo: [Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Portada)

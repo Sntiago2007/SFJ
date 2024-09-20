@@ -1,0 +1,17 @@
+sub formulario ()
+    
+    num = dt.Cells(1, 7) + 2
+
+    dt.Cells(num, 1) = form.Cells(5, 5)
+    dt.Cells(num, 2) = form.cells(7, 5)
+    dt.cells(num, 3) = form. cells(9, 5)
+    form.cells(5, 5) = ""
+    form.cells(7, 5) = ""
+    form.cells(9, 5) = ""
+    
+    a =  dt.cells(1, 7) + 1
+    
+    dt.cells(1, 7) = a
+
+    msgbox "guardado"
+end sub

@@ -1,0 +1,13 @@
+sub funcion()
+    
+    Cant = inputbox("ingrese cantidad")
+
+    for i = 2 to int(Cant)
+
+        name = Cells(i, 1)
+        dosultimas = Mid(name, Len(name) - 1, 2)
+
+        Cells(i, 2) = dosultimas
+    Next i
+    
+end sub

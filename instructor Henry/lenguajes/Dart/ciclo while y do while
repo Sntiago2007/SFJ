@@ -1,0 +1,35 @@
+// Bucle while
+
+// Estructura básica
+while (condicion) {
+  // código a ejecutar
+}
+
+// Ejemplo práctico
+void main() {
+  int i = 0;
+  while (i < 5) {
+    print(i);
+    i++;
+  }
+  // Salida: 0, 1, 2, 3, 4
+}
+
+// Bucle do-while
+
+// Estructura básica
+
+do {
+  // código a ejecutar
+} while (condicion);
+
+// Ejemplo práctico 
+
+void main() {
+  int i = 0;
+  do {
+    print(i);
+    i++;
+  } while (i < 5);
+  // Salida: 0, 1, 2, 3, 4
+}

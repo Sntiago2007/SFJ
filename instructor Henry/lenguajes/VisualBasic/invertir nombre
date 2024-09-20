@@ -1,0 +1,14 @@
+Sub programa()
+    CantApren = Int(InputBox("Ingrese la cantidad de aprendices:"))
+    For i = 1 To CantApren
+        NomApren = InputBox("Ingrese el nombre del aprendiz:")
+        Cant = Len(NomApren)
+        Acum = " "
+        For j = Cant To 1 Step -1
+            Alreves = Mid(NomApren, j, 1)
+            Acum = Acum + Alreves
+        Next j
+        MsgBox (Acum)
+    Next i
+
+End Sub

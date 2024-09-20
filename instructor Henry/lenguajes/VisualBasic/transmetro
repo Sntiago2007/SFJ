@@ -1,0 +1,11 @@
+Sub transmetro()
+    For i = 1 to 9
+        a = cells(3, 1)
+        cells(3, i + 1) = a
+        Cells(3, i) = ""
+        Msgbox ("sigue")
+    next i
+    Cells(3, 1) = a
+    Cells(3, 10) = ""
+End Sub
+

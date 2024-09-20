@@ -1,0 +1,27 @@
+Sub funt()
+    nm = Cells(2, 2)
+    For i = 1 to 8
+        Cells(i + 1, i + 1) = nm
+        Cells(i, 1) = ""
+        For j = 2 to 1000000000
+        next j
+        Cells(9, 9) = Empty
+    next i
+    For x = 9 to 3 step -1
+        Cells(1, 1) = x
+        Cells(x - 1, 9) = nm
+        Cells(x, 9) = ""
+        For t = 9 to 1000000000
+        next t
+        Cells(2, 9) = Empty
+    next x
+
+    For o = 9 to 3 step -1
+        Cells(1, 1) = o
+        Cells(2, o - 1) = nm
+        Cells(2, o) = ""
+        For p = 9 to 1000000000
+        next p
+    next o
+
+End Sub
