@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Veterinario</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #e0e0e0;
+            border-radius: 20px 20px 0 0;
+            padding: 20px;
+        }
+
+        header img {
+            height: 100px;
+            margin-left: auto;
+            border-radius: 0 20px 0 0;
+        }
+
+        .textheader1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .textheader2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #000;
+        }
+
+        /* Nav */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #1b985e;
+            color: white;
+            padding: 15px 0;
+            border-radius: 0 0 20px 20px;
+        }
+
+        nav p {
+            margin: 0;
+            font-size: 18px;
+            padding: 0 20px;
+            border-right: 2px solid white;
+        }
+
+        nav p:last-child {
+            border-right: none;
+        }
+
+        /* Section principal */
+        section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        article {
+            width: 60%;
+            background-color: #fffa99;
+            border: 2px solid #ccc;
+            border-radius: 20px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        article img {
+            float: right;
+            border-radius: 10px;
+            width: 120px;
+            height: auto;
+        }
+
+        article h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        aside {
+            width: 35%;
+            background-color: #1b985e;
+            color: white;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        aside form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside form label {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        aside form input,
+        aside form select {
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        aside form button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fffa99;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #076d07;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <p class="textheader1">Centro Veterinario</p>
+            <strong class="textheader2">Caninos y Felinos</strong>
+            <img src="placeholder.jpg" alt="Logo">
+        </header>
+        <nav>
+            <p>.Servicios.</p>
+            <p>.Productos.</p>
+            <p>.Guardería.</p>
+            <p>.Promociones.</p>
+        </nav>
+        <section>
+            <div>
+                <article>
+                    <h3>Cuidados y educación para su perro</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel pulvinar lorem. Suspendisse potenti.</p>
+                    <img src="dog1.jpg" alt="Perro">
+                    <p><a href="#">Ver más...</a></p>
+                </article>
+                <article>
+                    <h3>Salir de viaje con su mascota</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel pulvinar lorem. Suspendisse potenti.</p>
+                    <img src="dog2.jpg" alt="Perro">
+                    <p><a href="#">Ver más...</a></p>
+                </article>
+            </div>
+            <aside>
+                <h3>Solicitar cita médica</h3>
+                <form>
+                    <label for="mascota">Mascota:</label>
+                    <input type="text" id="mascota" name="mascota">
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad">
+
+                    <label for="raza">Raza:</label>
+                    <input type="text" id="raza" name="raza">
+
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora">
+
+                    <label for="amo">Amo:</label>
+                    <input type="text" id="amo" name="amo">
+
+                    <button type="submit">Validar cita</button>
+                </form>
+            </aside>
+        </section>
+        <footer>
+            <p>Contáctenos</p>
+            <p>Línea gratuita: 018000-00001</p>
+            <p>Correo: preguntas@caninosyfelinos.com</p>
+        </footer>
+    </main>
+</body>
+</html>
