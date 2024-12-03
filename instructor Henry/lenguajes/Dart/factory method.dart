@@ -8,21 +8,21 @@ abstract class Transporte{
   void entregar();
 }
 
-class camion implements Transporte{
+class Camion implements Transporte{
   @override
   void entregar() {
     print('Entregando carga con camión');
   }
 }
 
-class avion implements Transporte{
+class Avion implements Transporte{
   @override
   void entregar() {
     print('Entregando carga con avión');
   }
 }
 
-class barco implements Transporte{
+class Barco implements Transporte{
   @override
   void entregar() {
     print('Entregando carga con barco');
@@ -36,21 +36,21 @@ abstract class Logistica{
 class LogisticaTerrestre implements Logistica{
   @override
   Transporte crearTransporte() {
-  return camion();
+  return Camion();
   }
 }
 
 class LogisticaAerea implements Logistica{
   @override
   Transporte crearTransporte() {
-    return avion();
+    return Avion();
   }
 }
 
 class LogisticaMaritima implements Logistica{
   @override
   Transporte crearTransporte() {
-    return barco();
+    return Barco();
   }
 }
 
