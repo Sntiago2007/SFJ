@@ -7,6 +7,8 @@ class UserSuccess extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(12),
+      height: 200,
+      width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.green.shade100, // 🎨 Fondo verde de éxito
         border: Border.all(color: Colors.black54),
@@ -21,11 +23,9 @@ class UserSuccess extends StatelessWidget {
                 color: Colors.green,
               )),
           SizedBox(height: 8),
-          Text("Comprar", style: TextStyle(fontWeight: FontWeight.bold)),
-          Text("Ir al Ara"),
-          Divider(),
-          Text("Tránsito", style: TextStyle(fontWeight: FontWeight.bold)),
-          Text("Trámite"),
+          Text("Hola, Carlos", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          Text("Contacto: usuario@gmail.com"),
+          Text("Saldo: 1200"),
         ],
       ),
     );
